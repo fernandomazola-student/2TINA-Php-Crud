@@ -1,10 +1,6 @@
-<?php
- $connection = mysqli_connect('localhost', 'root', 'fiap', 'loginapp');       
-    if(!$connection){
-         die("Conexão falhou");
-    }
-         
- $query = "SELECT * FROM usuarios";     
+<?php include "db.php";
+
+ $query = "SELECT * FROM usuarios";
  $resultado = mysqli_query($connection, $query);
 ?>
 
@@ -17,18 +13,18 @@
 </head>
 <body>
 <div class="container">
-    
+
     <div class="col-sm-6">
         <?php
         while($row = mysqli_fetch_assoc($resultado)){
-        ?>    
-         
-        <pre>       
-        <?php        
-            print_r($row); 
-        }        
-        ?> 
-        </pre>   
+        ?>
+
+        <pre>
+        <?php
+            print_r($row);
+        }
+        ?>
+        </pre>
     </div>
 
 </div>

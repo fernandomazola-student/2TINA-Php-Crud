@@ -1,16 +1,8 @@
-<?php
+<?php include "db.php";
 
     if(isset($_POST['enviar'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
-
-        //Estabelecendo a conexão
-        $connection = mysqli_connect('localhost', 'root', 'fiap', 'loginapp');
-
-
-        if(!$connection){
-           die("Vish.. Deu ruim");
-        }
 
         //Query para inserir os dados de acordo com os nomes das variáveis.
         $query = "INSERT INTO usuarios(username,password) VALUES ('$username', '$password')";
