@@ -1,7 +1,10 @@
+<?php include "functions.php" ?>
 <?php include "db.php";
 
- $query = "SELECT * FROM usuarios";
- $resultado = mysqli_query($connection, $query);
+
+
+ // $query = "SELECT * FROM usuarios";
+ // $resultado = mysqli_query($connection, $query);
 ?>
 
 <!DOCTYPE html>
@@ -15,16 +18,24 @@
 <div class="container">
 
     <div class="col-sm-6">
-        <?php
-        while($row = mysqli_fetch_assoc($resultado)){
-        ?>
 
-        <pre>
-        <?php
-            print_r($row);
-        }
-        ?>
-        </pre>
+      <pre>
+      <?php
+        buscaDados();
+      ?>
+    </pre>
+
+
+        <!-- </?php
+        //while($row = mysqli_fetch_assoc($resultado)){
+        //?>
+
+        //<pre>
+        //</?php
+        //    print_r($row);
+        //}
+        //?>
+      </pre> -->
     </div>
 
 </div>

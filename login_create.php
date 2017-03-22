@@ -1,21 +1,29 @@
+<?php include "functions.php" ?>
 <?php include "db.php";
 
     if(isset($_POST['enviar'])){
-        $username = $_POST['username'];
-        $password = $_POST['password'];
 
-        //Query para inserir os dados de acordo com os nomes das variáveis.
-        $query = "INSERT INTO usuarios(username,password) VALUES ('$username', '$password')";
+      insereDados();
 
-        //Função para inserir executar um query em nosso banco.
-        $resultado = mysqli_query($connection, $query);
 
-        //Validação
-        if(!$resultado){
-            die("Não deu certo a inclusão" .mysqli_error($connection));
-        } else {
-            echo "Dados criados com sucesso";
-        }
+
+
+
+        // $username = $_POST['username'];
+        // $password = $_POST['password'];
+        //
+        // //Query para inserir os dados de acordo com os nomes das variáveis.
+        // $query = "INSERT INTO usuarios(username,password) VALUES ('$username', '$password')";
+        //
+        // //Função para inserir executar um query em nosso banco.
+        // $resultado = mysqli_query($connection, $query);
+        //
+        // //Validação
+        // if(!$resultado){
+        //     die("Não deu certo a inclusão" .mysqli_error($connection));
+        // } else {
+        //     echo "Dados criados com sucesso";
+        // }
 
     }
 
