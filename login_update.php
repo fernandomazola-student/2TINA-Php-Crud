@@ -21,6 +21,7 @@
 <div class="container">
 
     <div class="col-sm-6">
+      <h1 class="text-center">UPDATE</h1>
         <form action="login_update.php" method="post">
 
             <div class="form-group">
@@ -43,7 +44,7 @@
             </div>
 
             <input class="btn btn-primary" type="submit" name="update" value="Atualizar">
-
+            <?php include "includes/buttons.php" ?>
         </form>
     </div>
 </div>

@@ -18,7 +18,7 @@
 <div class="container">
 
     <div class="col-sm-6">
-
+    <h1 class="text-center">READ</h1>
       <pre>
       <?php
         buscaDados();
@@ -36,6 +36,7 @@
         //}
         //?>
       </pre> -->
+      <?php include "includes/buttons.php" ?>
     </div>
 
 </div>

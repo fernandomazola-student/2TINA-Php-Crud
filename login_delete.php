@@ -17,9 +17,11 @@ if(isset($_POST['delete'])){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 <body>
+  <?php include "includes/header.php" ?>
 <div class="container">
 
     <div class="col-sm-6">
+      <h1 class="text-center">CREATE</h1>
         <form action="login_delete.php" method="post">
 
             <div class="form-group">
@@ -42,12 +44,12 @@ if(isset($_POST['delete'])){
             </div>
 
             <input class="btn btn-primary" type="submit" name="delete" value="Deletar">
-
+            <?php include "includes/buttons.php" ?>
         </form>
     </div>
 
 
-
+<?php include "includes/footer.php" ?>
 
 
 </div>

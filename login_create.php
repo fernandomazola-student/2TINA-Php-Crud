@@ -41,6 +41,7 @@
 <div class="container">
 
     <div class="col-sm-6">
+      <h1 class="text-center">DELETE</h1>
         <form action="login_create.php" method="post">
 
             <div class="form-group">
@@ -54,7 +55,9 @@
             </div>
 
             <input class="btn btn-primary" type="submit" name="enviar" value="Enviar">
+            <br><br>
 
+          <?php include "includes/buttons.php" ?>
         </form>
     </div>
 
