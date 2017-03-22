@@ -9,14 +9,7 @@ if(isset($_POST['delete'])){
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-</head>
-<body>
+
   <?php include "includes/header.php" ?>
 <div class="container">
 
@@ -43,15 +36,10 @@ if(isset($_POST['delete'])){
               </select>
             </div>
 
-            <input class="btn btn-primary" type="submit" name="delete" value="Deletar">
+            <input class="btn btn-primary" type="submit" name="delete" value="Deletar"><br><br>
             <?php include "includes/buttons.php" ?>
         </form>
     </div>
 
 
-<?php include "includes/footer.php" ?>
-
-
-</div>
-</body>
-</html>
+    <?php include "includes/footer.php" ?>
